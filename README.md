@@ -27,3 +27,52 @@ The program utilizes the previous two phases: lexical analyzer and syntax analyz
 The program generates assembly instructions defined by a fictitious assembly language following:
 PUSHI, PUSHM, POPM, STDOUT, STDIN, ADD, SUB, MUL, DIV, GRT, LES, EQU, NEQ,  GEQ, LEQ, JUMPZ, JUMP, and LABEL.
 
+
+Example
+
+Input Source code:
+%% 
+    integer   i, max, sum;
+
+    sum := 0;
+    i := 1;
+    read ( max);
+    while (i <  max)  {
+          sum := sum + i;
+          i  := i + 1; 
+     }
+     write (sum+max);
+
+Output: 
+
+Identifier      Mem_Address     Type
+i               10000           integer
+max             10001           integer
+sum             10002           integer
+
+Instr_id        Operator        Operand
+1               PUSHI           0
+2               POPM            10002
+3               PUSHI           1
+4               POPM            10000
+5               STDIN           
+6               POPM            10001
+7               LABEL           
+8               PUSHM           10000
+9               PUSHM           10001
+10              LES             
+11              JUMPZ           21
+12              PUSHM           10002
+13              PUSHM           10000
+14              ADD             
+15              POPM            10002
+16              PUSHM           10000
+17              PUSHI           1
+18              ADD             
+19              POPM            10000
+20              JUMP            7
+21              PUSHM           10002
+22              PUSHM           10001
+23              ADD             
+24              STDOUT          
+
