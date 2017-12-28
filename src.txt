@@ -1,0 +1,21 @@
+%%
+int a, b,c, x;
+integer   i, max, sum;
+boolean flag;
+    sum := 0;
+    i := 1;
+    read ( max);
+    while (flag = 1)  {
+          sum := sum + i;
+          i  := i + 1;
+          read(max);
+        x := a + b * c;
+        
+        if (a < b)  
+            a := c;
+        else
+            b := c;
+        fi
+           
+     }
+     write (sum+max);
