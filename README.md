@@ -8,8 +8,8 @@ Program Requirements
 -   Python 2.7
 
 How to Use the Program
-1.  Open terminal in Linux OS
-2.  Change directory to …/SemanticAnalyzer
+1.  Open terminal
+2.  Change directory to …/Programming_Lang_Compiler
 3.  Type command:
 python compiler_driver.py
 
