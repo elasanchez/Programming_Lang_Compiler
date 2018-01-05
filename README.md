@@ -74,5 +74,4 @@ Instr_id        Operator        Operand
 21              PUSHM           10002
 22              PUSHM           10001
 23              ADD             
-24              STDOUT          
-
+24              STDOUT   
