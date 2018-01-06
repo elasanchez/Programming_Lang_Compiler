@@ -7,11 +7,11 @@ The source code will be a simplified language without reals and function definit
 ###### Program Requirements
 -   Python 2.7
 
-How to Use the Program
+###### How to Use the Program
 1.  Open terminal
 2.  Change directory to …/Programming_Lang_Compiler
 3.  Type command:
-python compiler_driver.py
+    python compiler_driver.py
 
 
 ###### Input/output
@@ -31,6 +31,7 @@ PUSHI, PUSHM, POPM, STDOUT, STDIN, ADD, SUB, MUL, DIV, GRT, LES, EQU, NEQ,  GEQ,
 ## Example
 
 Input Source code:
+
 %% 
     integer   i, max, sum;
 
