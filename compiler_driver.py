@@ -1,9 +1,13 @@
 #!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
 """
-@author: luigi
+@author: Edgard Luigi Sanchez
+ 
 
-
+Description:
+        This program uses Recursive Descent Parser method initially and is extended to apply Syntax-Direct translation
+        as this program was previously a parser. It is called a Syntax-directed translator because this compiler is driven by 
+        the parser.
 """
 
 import sys
