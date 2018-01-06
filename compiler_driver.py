@@ -1131,9 +1131,7 @@ def printTL():
 
 def parse():
     global n, tokens, lookahead, production
-
-        #    abc#c# := 10 * 20 / 30 - 10.0 + true
-        #  @abc#(a: int, b :float) %% boolean x, y, z; int w, p, e;
+    
     while(lookahead < n):
         validate = rat17F()
         if validate == -1 and lookahead != n:
