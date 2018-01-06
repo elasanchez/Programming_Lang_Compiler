@@ -7,6 +7,7 @@
         This finite state machine or finite state automata reads in a source file character by character and feeds it into the machine. The machine changes states as it traverses through the states. For convenience, once the machine encounteres an invalid symbol, it stops and prints the token. Token is a tuple of class and lexeme, where the class is categorized as Identifier, Integer, Float, Separator, Operator, and Keywords.
 
         This program uses sets to simplify the states a set of symbols may be at a given time. For example, a state self.intState represents a digit has been read and the self.langState implies that some symbol in the alphabet has been read but it doesn't kknow exactly what symbol that is. This is ok for this program since it uses a variable to store previously read symbols for the purpose of printing.
+
 '''
 
 
